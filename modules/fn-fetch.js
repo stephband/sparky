@@ -13,20 +13,20 @@ Fetches and parses a JSON file and uses it as scope to render the node.
 
 */
 
-import { Stream } from '../../fn/module.js';
-import { requestGet } from '../../dom/module.js';
+import cache from '../../fn/modules/cache.js';
+import Stream from '../../fn/modules/stream.js';
+import { requestGet } from '../../dom/modules/request.js';
 import Sparky from './sparky.js';
 import { register } from './fn.js';
 
 const DEBUG = window.DEBUG;
 
-const cache = {};
+const request = cache((url) => requestGet(url));
 
 function importScope(url, scopes) {
-    requestGet(url)
+    request(url)
     .then(function(data) {
         if (!data) { return; }
-        cache[url] = data;
         scopes.push(data);
     })
     .catch(function(error) {
@@ -51,21 +51,10 @@ register('fetch', function(node, params) {
                 return scope[$1];
             });
 
-            // If the resource is cached...
-            if (cache[url]) {
-                scopes.push(cache[url]);
-            }
-            else {
-                importScope(url, scopes);
-            }
+            importScope(url, scopes);
         });
 
         return scopes;
-    }
-
-    // If the resource is cached, return it as a readable
-    if (cache[path]) {
-        return Stream.of(cache[path]);
     }
 
     importScope(path, scopes);
