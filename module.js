@@ -42,6 +42,7 @@ import './modules/fn-on.js';
 import './modules/fn-rest.js';
 import './modules/fn-scope.js';
 import './modules/fn-take.js';
+import './modules/fn-use.js';
 
 import fn from './modules/fn.js';
 import pipe from './modules/pipe.js';

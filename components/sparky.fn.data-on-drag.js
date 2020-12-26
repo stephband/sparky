@@ -21,7 +21,7 @@
 
 		// Wait for the next frame before setting the dragged flag. The dragged
 		// flag is pretty much purely for style, and if it is styled immediately
-		// the dragged icon also gets teh ghosted style, which we don't want.
+		// the dragged icon also gets the ghosted style, which we don't want.
 		//window.requestAnimationFrame(function() {
 		//
 		//});
