@@ -213,10 +213,7 @@ seconds:
     normalise: {
         tx: function (curve, min, max, number) {
             const name = toCamelCase(curve);
-            if (!number) {
-                console.log('HELLO');
-                return;
-            }
+            if (!number) { return; }
             return normalise[name](min, max, number);
         },
 
