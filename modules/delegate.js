@@ -39,7 +39,7 @@ register('fn-name', delegate({
 selectors).
 */
 
-import { events } from '../../dom/module.js';
+import events from '../../dom/modules/events.js';
 
 function createArgs(e, selector) {
     const node = e.target.closest(selector);

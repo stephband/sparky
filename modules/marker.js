@@ -1,4 +1,5 @@
-import { create, tag } from '../../dom/module.js';
+import create from '../../dom/modules/create.js';
+import tag    from '../../dom/modules/tag.js';
 
 const DEBUG = window.DEBUG;
 

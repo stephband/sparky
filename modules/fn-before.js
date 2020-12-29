@@ -1,5 +1,5 @@
-import { getPath } from '../../fn/module.js';
-import { fragmentFromHTML } from '../../dom/module.js';
+import getPath from '../../fn/modules/get-path.js';
+import { fragmentFromHTML } from '../../dom/modules/fragments.js';
 import { register } from './fn.js';
 
 register('before', function(node, params) {

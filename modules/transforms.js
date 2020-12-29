@@ -3,6 +3,9 @@
 import { translations } from '../config.js';
 
 // Import uncurried functions from Fn library modules
+import compose  from '../../fn/modules/compose.js';
+import overload from '../../fn/modules/overload.js';
+
 import { getPath }      from '../../fn/modules/get-path.js';
 import { equals }       from '../../fn/modules/equals.js';
 import { get }          from '../../fn/modules/get.js';
@@ -33,18 +36,19 @@ import { prepend }      from '../../fn/modules/strings/prepend.js';
 import { prepad }       from '../../fn/modules/strings/prepad.js';
 import { postpad }      from '../../fn/modules/strings/postpad.js';
 import slugify          from '../../fn/modules/strings/slugify.js';
-import toCamelCase      from '../../fn/modules/strings/to-camel-case.js';
+import toCamelCase      from '../../fn/modules/to-camel-case.js';
 
 import { contains }     from '../../fn/modules/lists/core.js';
 import last             from '../../fn/modules/lists/last.js';
 
-import { compose, overload, formatDate, formatTime, addDate, addTime, subTime } from '../../fn/module.js';
+import { formatDate, addDate } from '../../fn/modules/date.js';
+import { formatTime, addTime, subTime } from '../../fn/modules/time.js';
 
 
 // Import uncurried functions from DOM library
 
 import escape from '../../dom/modules/escape.js';
-import { parseValue, toRem, toVw, toVh } from '../../dom/modules/parse-value.js';
+import parseValue, { toRem, toVw, toVh } from '../../dom/modules/parse-value.js';
 
 var DEBUG     = window.DEBUG === true || window.DEBUG === 'Sparky';
 var A         = Array.prototype;

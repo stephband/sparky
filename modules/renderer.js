@@ -1,5 +1,6 @@
 
-import { noop, observe } from '../../fn/module.js'
+import noop from '../../fn/modules/noop.js';
+import { observe } from '../../fn/modules/observer.js';
 import { cue, uncue }   from './timer.js';
 import { isValue }   from './value.js';
 

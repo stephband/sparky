@@ -1,5 +1,11 @@
 
-import { getPath, setPath, id, noop, pipe, Target, weakCache } from '../../fn/module.js';
+import getPath   from '../../fn/modules/get-path.js';
+import setPath   from '../../fn/modules/set-path.js';
+import id        from '../../fn/modules/id.js';
+import noop      from '../../fn/modules/noop.js';
+import pipe      from '../../fn/modules/pipe.js';
+import { target as Target } from '../../fn/modules/observer.js';
+import weakCache from '../../fn/modules/weak-cache.js';
 import Renderer from './renderer.js';
 import { transformers } from './transforms.js';
 import { cue, uncue }   from './timer.js';

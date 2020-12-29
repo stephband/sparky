@@ -1,6 +1,12 @@
 
-import { choose, get, isDefined, noop, overload, pipe } from '../../fn/module.js';
-import { tag, trigger } from '../../dom/module.js';
+import choose    from '../../fn/modules/choose.js';
+import get       from '../../fn/modules/get.js';
+import isDefined from '../../fn/modules/is-defined.js';
+import noop      from '../../fn/modules/noop.js';
+import overload  from '../../fn/modules/overload.js';
+import pipe      from '../../fn/modules/pipe.js';
+import tag       from '../../dom/modules/tag.js';
+import { trigger } from '../../dom/modules/trigger.js';
 import { parseToken, parseText, parseBoolean } from './parse.js';
 import { transformers, transforms } from './transforms.js';
 import BooleanRenderer from './renderer-boolean.js';

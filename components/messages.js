@@ -8,8 +8,12 @@
 //   duration: seconds
 // })
 
-import { overload, remove, Stream, toType, Observer, observe } from '../fn/module.js';
-import { events } from '../dom/module.js';
+import overload from '../fn/modules/overload.js';
+import remove   from '../fn/modules/remove.js';
+import Stream   from '../fn/modules/stream.js';
+import toType   from '../fn/modules/to-type.js';
+import { Observer, observe } from '../fn/modules/observer.js';
+import events   from '../dom/modules/events.js';
 import { register } from '../sparky/module.js';
 
 const assign   = Object.assign;

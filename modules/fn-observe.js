@@ -2,7 +2,8 @@
 Observe()
 */
 
-import { call, observe } from '../../fn/module.js';
+import call from '../../fn/modules/call.js';
+import { observe } from '../../fn/modules/observer.js';
 
 function createObserver(path, fn, scope, node) {
     return observe(path, function(value) {

@@ -1,5 +1,5 @@
 import { get, set, normalise, Observer, Stream } from '../../fn/module.js';
-import dom from '../../dom/module.js';
+import dom    from '../../dom/module.js';
 import Sparky from '../module.js';
 
 function getValue(target) {

@@ -20,8 +20,14 @@ on each clone.
 */
 
 
-import { last, noop, observe } from '../../fn/module.js';
-import { before, remove, tag, isFragmentNode } from '../../dom/module.js';
+import last    from '../../fn/modules/lists/last.js';
+import noop    from '../../fn/modules/noop.js';
+import observe from '../../fn/modules/observer/observe.js';
+import { before } from '../../dom/modules/mutation.js';
+import remove  from '../../dom/modules/remove.js';
+import tag     from '../../dom/modules/tag.js';
+import { isFragmentNode } from '../../dom/modules/node.js';
+
 import { uncue } from './timer.js';
 import Renderer from './renderer.js';
 import Marker from './marker.js';

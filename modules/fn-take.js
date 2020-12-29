@@ -1,5 +1,7 @@
 
-import { mutations, nothing, take } from '../../fn/module.js';
+import mutations from '../../fn/modules/mutations.js';
+import nothing   from '../../fn/modules/nothing.js';
+import take      from '../../fn/modules/take.js';
 import { register } from './fn.js';
 
 register('take', function(node, params) {

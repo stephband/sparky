@@ -12,8 +12,9 @@ The request type is the form `method`, and the url the form `action` attribute.
 */
 
 
-import { get } from '../../fn/module.js';
-import { events, preventDefault, request } from '../../dom/module.js';
+import get from '../../fn/modules/get.js';
+import events, { preventDefault } from '../../dom/modules/events.js';
+import { request }  from '../../dom/modules/request.js';
 import { register } from './functions.js';
 
 register('submit', function(node, params) {

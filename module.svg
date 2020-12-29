@@ -339,15 +339,15 @@
 <path fill="none" stroke="#757575" d="M1331.67,-2700.88C1338.32,-2765.56 1373.36,-3075.52 1440,-3139.04 1441.72,-3140.68 1443.54,-3142.21 1445.43,-3143.63"/>
 <polygon fill="#757575" stroke="#757575" points="1443.86,-3146.78 1454.18,-3149.18 1447.61,-3140.87 1443.86,-3146.78"/>
 </g>
-<!-- ../dom/modules/nodes.js -->
+<!-- ../dom/modules/node.js -->
 <g id="node29" class="node">
-<title>../dom/modules/nodes.js</title>
+<title>../dom/modules/node.js</title>
 <path fill="none" stroke="#cfffac" d="M1618.83,-3129.54C1618.83,-3129.54 1470.17,-3129.54 1470.17,-3129.54 1466.33,-3129.54 1462.5,-3125.71 1462.5,-3121.87 1462.5,-3121.87 1462.5,-3114.21 1462.5,-3114.21 1462.5,-3110.37 1466.33,-3106.54 1470.17,-3106.54 1470.17,-3106.54 1618.83,-3106.54 1618.83,-3106.54 1622.67,-3106.54 1626.5,-3110.37 1626.5,-3114.21 1626.5,-3114.21 1626.5,-3121.87 1626.5,-3121.87 1626.5,-3125.71 1622.67,-3129.54 1618.83,-3129.54"/>
-<text text-anchor="middle" x="1544.5" y="-3114.34" font-family="Arial" font-size="14.00" fill="#cfffac">../dom/modules/nodes.js</text>
+<text text-anchor="middle" x="1544.5" y="-3114.34" font-family="Arial" font-size="14.00" fill="#cfffac">../dom/modules/node.js</text>
 </g>
-<!-- ../dom/module.js&#45;&gt;../dom/modules/nodes.js -->
+<!-- ../dom/module.js&#45;&gt;../dom/modules/node.js -->
 <g id="edge28" class="edge">
-<title>../dom/module.js&#45;&gt;../dom/modules/nodes.js</title>
+<title>../dom/module.js&#45;&gt;../dom/modules/node.js</title>
 <path fill="none" stroke="#757575" d="M1331.94,-2700.6C1339.73,-2761.12 1378.69,-3040.92 1440,-3098.04 1443.92,-3101.69 1448.29,-3104.76 1452.96,-3107.35"/>
 <polygon fill="#757575" stroke="#757575" points="1451.74,-3110.65 1462.28,-3111.74 1454.73,-3104.31 1451.74,-3110.65"/>
 </g>
@@ -567,15 +567,15 @@
 <path fill="none" stroke="#757575" d="M1330.3,-2700.66C1328.93,-2792.34 1324.4,-3399.12 1440,-3529.04 1443.06,-3532.48 1446.5,-3535.5 1450.23,-3538.14"/>
 <polygon fill="#757575" stroke="#757575" points="1448.42,-3541.14 1458.78,-3543.35 1452.06,-3535.16 1448.42,-3541.14"/>
 </g>
-<!-- ../dom/modules/traversal.js -->
+<!-- ../dom/modules/traverse.js -->
 <g id="node48" class="node">
-<title>../dom/modules/traversal.js</title>
+<title>../dom/modules/traverse.js</title>
 <path fill="none" stroke="#cfffac" d="M1626.33,-2372.54C1626.33,-2372.54 1462.67,-2372.54 1462.67,-2372.54 1458.83,-2372.54 1455,-2368.71 1455,-2364.87 1455,-2364.87 1455,-2357.21 1455,-2357.21 1455,-2353.37 1458.83,-2349.54 1462.67,-2349.54 1462.67,-2349.54 1626.33,-2349.54 1626.33,-2349.54 1630.17,-2349.54 1634,-2353.37 1634,-2357.21 1634,-2357.21 1634,-2364.87 1634,-2364.87 1634,-2368.71 1630.17,-2372.54 1626.33,-2372.54"/>
-<text text-anchor="middle" x="1544.5" y="-2357.34" font-family="Arial" font-size="14.00" fill="#cfffac">../dom/modules/traversal.js</text>
+<text text-anchor="middle" x="1544.5" y="-2357.34" font-family="Arial" font-size="14.00" fill="#cfffac">../dom/modules/traverse.js</text>
 </g>
-<!-- ../dom/module.js&#45;&gt;../dom/modules/traversal.js -->
+<!-- ../dom/module.js&#45;&gt;../dom/modules/traverse.js -->
 <g id="edge47" class="edge">
-<title>../dom/module.js&#45;&gt;../dom/modules/traversal.js</title>
+<title>../dom/module.js&#45;&gt;../dom/modules/traverse.js</title>
 <path fill="none" stroke="#757575" d="M1330.77,-2677.31C1332.5,-2631.4 1345.32,-2462.43 1440,-2381.04 1441.8,-2379.49 1443.69,-2378.04 1445.65,-2376.7"/>
 <polygon fill="#757575" stroke="#757575" points="1447.8,-2379.49 1454.65,-2371.41 1444.25,-2373.46 1447.8,-2379.49"/>
 </g>

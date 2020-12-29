@@ -1,4 +1,5 @@
-import { Stream, Observer } from '../../fn/module.js';
+import Stream from '../../fn/modules/stream.js';
+import { Observer } from '../../fn/modules/observer.js';
 import Sparky from '../module.js';
 
 Sparky.fn.clock = function(node, scopes, params) {

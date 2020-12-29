@@ -1,5 +1,7 @@
-import { cache } from '../../fn/module.js';
-import { parseHTML, select, request } from '../../dom/module.js';
+import cache         from '../../fn/modules/cache.js';
+import { parseHTML } from '../../dom/modules/parse.js';
+import select        from '../../dom/modules/select.js';
+import { request }   from '../../dom/modules/request.js';
 
 const DEBUG = true;
 

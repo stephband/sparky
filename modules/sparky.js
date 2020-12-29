@@ -1,5 +1,15 @@
-import { Observer, observe, Stream, capture, nothing, noop } from '../../fn/module.js';
-import { before, create, tag, fragmentFromChildren, isFragmentNode } from '../../dom/module.js';
+import { Observer, observe }  from '../../fn/modules/observer.js';
+import Stream   from '../../fn/modules/stream.js';
+import capture  from '../../fn/modules/capture.js';
+import nothing  from '../../fn/modules/nothing.js';
+
+import { before } from '../../dom/modules/mutation.js';
+import create   from '../../dom/modules/create.js';
+import tag from '../../dom/modules/tag.js';
+import { fragmentFromChildren } from '../../dom/modules/fragments.js';
+import { isFragmentNode } from '../../dom/modules/node.js';
+
+
 import importTemplate from './import-template.js';
 import { parseParams, parseText } from './parse.js';
 import config from '../config.js';

@@ -108,8 +108,13 @@ with id `no-keywords` is rendered in place of `my-template`:
 ```
 */
 
-import { capture, exec, id, noop, nothing } from '../../fn/module.js'
+import capture from '../../fn/modules/capture.js';
+import exec    from '../../fn/modules/exec.js';
+import id      from '../../fn/modules/id.js';
+import noop    from '../../fn/modules/noop.js';
+import nothing from '../../fn/modules/nothing.js';
 import Value from './value.js';
+
 
 /**
 parseParams(array, string)

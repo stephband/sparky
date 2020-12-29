@@ -1,5 +1,4 @@
-import { get } from '../../fn/module.js';
-import { now } from '../../dom/module.js';
+import now from '../../dom/modules/now.js';
 
 // Debug mode on by default
 const DEBUG = window.DEBUG === undefined || window.DEBUG;

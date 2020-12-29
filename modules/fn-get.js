@@ -12,7 +12,8 @@ Maps scope to the value at `path` of the current scope:
 ```
 */
 
-import { mutations, nothing } from '../../fn/module.js';
+import mutations from '../../fn/modules/mutations.js';
+import nothing   from '../../fn/modules/nothing.js';
 import { register } from './fn.js';
 
 register('get', function(node, params) {
