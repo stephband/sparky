@@ -18,6 +18,23 @@ import Mount, { assignTransform } from './mount.js';
 import toText from './to-text.js';
 import { logNode, nodeToString } from './log.js';
 
+// Register base set of Sparky functions
+import './fn-after.js';
+import './fn-before.js';
+import './fn-append.js';
+import './fn-prepend.js';
+import './fn-debug.js';
+import './fn-each.js';
+import './fn-entries.js';
+import './fn-fetch.js';
+import './fn-get.js';
+import './fn-on.js';
+import './fn-rest.js';
+import './fn-scope.js';
+import './fn-take.js';
+import './fn-use.js';
+
+
 const DEBUG = window.DEBUG === true || window.DEBUG === 'Sparky';
 
 const assign = Object.assign;
