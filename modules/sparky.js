@@ -3,7 +3,7 @@ import Stream   from '../../fn/modules/stream.js';
 import capture  from '../../fn/modules/capture.js';
 import nothing  from '../../fn/modules/nothing.js';
 
-import { before } from '../../dom/modules/mutation.js';
+import { before } from '../../dom/modules/mutate.js';
 import create   from '../../dom/modules/create.js';
 import tag from '../../dom/modules/tag.js';
 import { fragmentFromChildren } from '../../dom/modules/fragments.js';

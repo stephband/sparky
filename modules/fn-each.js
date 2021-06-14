@@ -23,7 +23,7 @@ on each clone.
 import last    from '../../fn/modules/lists/last.js';
 import noop    from '../../fn/modules/noop.js';
 import observe from '../../fn/modules/observer/observe.js';
-import { before } from '../../dom/modules/mutation.js';
+import { before } from '../../dom/modules/mutate.js';
 import remove  from '../../dom/modules/remove.js';
 import tag     from '../../dom/modules/tag.js';
 import { isFragmentNode } from '../../dom/modules/node.js';
