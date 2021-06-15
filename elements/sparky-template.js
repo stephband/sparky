@@ -1,9 +1,9 @@
 
-import requestTick      from '../../fn/modules/request-tick.js';
-import element          from '../../dom/modules/element.js';
-import { log, logNode } from '../modules/log.js';
-import config from           '../config.js';
-import Sparky, { setupSparky, mountSparky } from '../modules/sparky.js';
+import requestTick from '../../fn/modules/request-tick.js';
+import element     from '../../dom/modules/element.js';
+import { logNode } from '../modules/log.js';
+import config      from           '../config.js';
+import { setupSparky, mountSparky } from '../modules/sparky.js';
 
 const DEBUG = false; //window.DEBUG === true || window.DEBUG === 'sparky';
 const assign = Object.assign;
@@ -59,9 +59,6 @@ requestTick(function() {
             this.options = assign({
                 mount: mountSparky
             }, config);
-
-            // Flag
-            supportsCustomBuiltIn = true;
         },
 
         connect: function() {
