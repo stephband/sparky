@@ -40,25 +40,23 @@ and **includes**.
 // While loading we must wait a tick for sparky functions to register before
 // declaring the customised template element. This is a little pants, I admit.
 requestTick(function() {
-    var supportsCustomBuiltIn = false;
-
-    element('sparky-template', {
-        extends: 'template',
-
-        properties: {},
-
-        attributes: {
-            src: function(src) {
-                this.options.src = src;
+    element('<template is="sparky-template">', {
+        properties: {
+            src: {
+                attribute: function(src) {
+                    this.options.src = src;
+                },
             },
 
-            fn: function(fn) {
-                this.options.fn = fn;
+            fn: {
+                attribute: function(fn) {
+                    this.options.fn = fn;
+                }
             }
         },
 
-        construct: function(elem) {
-            elem.options = assign({
+        construct: function() {
+            this.options = assign({
                 mount: mountSparky
             }, config);
 
@@ -66,46 +64,18 @@ requestTick(function() {
             supportsCustomBuiltIn = true;
         },
 
-        connect: function(elem) {
-            if (DEBUG) { logNode(elem, elem.options.fn, elem.options.src); }
+        connect: function() {
+            if (DEBUG) { logNode(this, this.options.fn, this.options.src); }
 
-            if (elem.options.fn) {
-                setupSparky(elem, elem, elem.options);
+            if (this.options.fn) {
+                setupSparky(this, this, this.options);
             }
             else {
                 // If there is no attribute fn, there is no way for this sparky
                 // to launch as it will never get scope. Enable sparky templates
                 // with just an include by passing in blank scope.
-                setupSparky(elem, elem, elem.options).push({});
+                setupSparky(this, this, this.options).push({});
             }
         }
     });
-
-    // If one has not been found already, test for customised built-in element
-    // support by force creating a <template is="sparky-template">
-    if (!supportsCustomBuiltIn) {
-        document.createElement('template', { is: 'sparky-template' });
-    }
-
-    // If still not supported, fallback to a dom query for [is="sparky-template"]
-    if (!supportsCustomBuiltIn) {
-        log("Browser does not support custom built-in elements so we're doin' it oldskool selector stylee.");
-
-        window.document
-        .querySelectorAll('[is="sparky-template"]')
-        .forEach((template) => {
-            const fn  = template.getAttribute(config.attributeFn) || undefined;
-            const src = template.getAttribute(config.attributeSrc) || undefined;
-
-            if (fn) {
-                Sparky(template, { fn: fn, src: src });
-            }
-            else {
-                // If there is no attribute fn, there is no way for this sparky
-                // to launch as it will never get scope. Enable sparky templates
-                // with just an include by passing in blank scope.
-                Sparky(template, { src: src }).push({});
-            }
-        });
-    }
 });
