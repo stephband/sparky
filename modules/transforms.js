@@ -26,7 +26,7 @@ import * as denormalise from '../../fn/modules/denormalisers.js';
 import { sum, exp, log, multiply, pow, root, toRad, toDeg } from '../../fn/modules/maths/core.js';
 import toLevel          from '../../fn/modules/maths/to-gain.js';
 import todB             from '../../fn/modules/maths/to-db.js';
-import { clamp }        from '../../fn/modules/maths/clamp.js';
+import { clamp }        from '../../fn/modules/clamp.js';
 import { mod }          from '../../fn/modules/maths/mod.js';
 import toCartesian      from '../../fn/modules/maths/to-cartesian.js';
 import toPolar          from '../../fn/modules/maths/to-polar.js';
